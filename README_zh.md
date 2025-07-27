@@ -49,9 +49,11 @@ yolov8_caries_detector/
    cd yolov8_caries_detector
    ```
 
-2. **安装依赖**
+2. **创建环境并安装依赖**
    ```bash
-   pip3 install -r requirements.txt
+   conda create -n yolov8_caries python=3.8 -y
+   conda activate yolov8_caries
+   pip install -r requirements.txt
    ```
 
 ### 运行Web服务
