@@ -47,8 +47,6 @@ def detect_objects_on_image(buf):
             round(x) for x in box.xyxy[0].tolist()
         ]
         class_id = box.cls[0].item()
-        if class_id != 0:
-            continue
         prob = round(box.conf[0].item(), 2)
         output.append([
             x1, y1, x2, y2, result.names[class_id], prob
@@ -56,4 +54,5 @@ def detect_objects_on_image(buf):
     return output
 
 
-serve(app, host='0.0.0.0', port=8080)
+if __name__ == "__main__":
+    serve(app, host='0.0.0.0', port=8080)
