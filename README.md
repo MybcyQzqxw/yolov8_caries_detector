@@ -1,5 +1,7 @@
 # The caries detection web-service using the YOLOv8 neural network
 
+English | [中文](README_zh.md)
+
 This repository contains the YOLOv8 object detection web service, that detects caries and other teeth deceases on images. Also, it contains additional scripts, that can be used to prepare the source dataset, to train the model and run test predictions.
 
 The DentalAI dataset used to train the model. You can download it from here: https://datasetninja.com/dentalai. If you want to run your own training process, you need to convert it to the YOLOv8 format, using the script in the `convert.ipynb` notebook.
